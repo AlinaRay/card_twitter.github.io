@@ -9,6 +9,12 @@ body {
     min-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+    color: #9c988b;
+    cursor:pointer;
+}
+
 .wrapper{
     margin: 0 auto;
     padding: 25px;
@@ -118,6 +124,20 @@ body {
     color: #fdfdfd;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(to bottom, rgba(244,105,62,1) 0%, rgba(255,205,199,1) 3%, rgba(243,129,94,1) 7%, rgba(244,102,62,1) 66%, rgba(244,102,62,1) 100%);
+    background: linear-gradient(to bottom, rgba(244,105,62,1) 0%, rgba(255,205,199,1) 3%,
+    rgba(243,129,94,1) 7%, rgba(244,102,62,1) 66%, rgba(244,102,62,1) 100%);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.75);
+    transition: all 0.5s ease;
+}
+
+.button:hover{
+    background-color: #f2ffd2;
+    box-shadow: inset 0 0 16px -5px rgba(255, 255, 255, 0.75);
+}
+.button:active{
+   color: #245789;
+    box-shadow: inset 7px -33px 40px 200px rgb(218, 225, 175);
+    /*background: linear-gradient(to bottom, rgb(146, 217, 211) 0%, rgb(216, 255, 253) 3%,*/
+    /*rgb(216, 255, 253) 7%, rgb(197, 255, 250) 66%, rgb(183, 255, 255) 100%);*/
+    transform: scale(0.9);
 }
